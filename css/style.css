@@ -25,7 +25,7 @@ body {
 }
 
 .normal {
-  background-color: #ffffff;
+  background-color: #b4b4b4;
 }
 
 .fighting {
@@ -45,7 +45,7 @@ body {
 }
 
 .rock {
-  background-color: #94946c;
+  background-color: #92925f;
 }
 
 .bug {
@@ -73,7 +73,7 @@ body {
 }
 
 .electric {
-  background-color: #ffff00;
+  background-color: #f1e148;
 }
 
 .psychic {
