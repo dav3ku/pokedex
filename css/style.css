@@ -10,13 +10,14 @@ body {
 }
 
 #pokemon-card:hover {
-  -webkit-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.7);
-  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.7);
   cursor: pointer;
 }
 
 .card-img-top {
-  width: 60%;
+  height: 150px;
+  width: 160px;
   align-self: center;
 }
 
