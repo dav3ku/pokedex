@@ -155,8 +155,9 @@ function searchByName() {
   // Funcion para buscar pokemones por nombre.
   LOADING.classList.remove("invisible");
   LOADING.classList.add("visible");
-  let search = document.querySelector("#search"); // Se selecciona el elemento para obtener el nombre.
-  let url = `https://pokeapi.co/api/v2/pokemon/${search.value}`; // Se crea la url para la busqueda.
+  let search = document.querySelector("#search");
+  let name = search.value.toLowerCase(); // Se selecciona el elemento para obtener el nombre.
+  let url = `https://pokeapi.co/api/v2/pokemon/${name}`; // Se crea la url para la busqueda.
   modalResults.innerHTML = ""; // Se limpia el grid de resultados.
   let sPokemon = getData(url); // Se obtiene la data de la API.
   sPokemon
