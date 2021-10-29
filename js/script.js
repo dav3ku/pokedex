@@ -38,8 +38,12 @@ function loadPokemon(use) {
         .then((data) => {
           const element = `
               <div class="col-sm-4 col-md-3 col-lg-2">
-                <div class="card" id="pokemon-card" data-bs-toggle="modal" data-bs-target="#pokemon${data.id}">
-                  <img src="${data.sprites.front_default}" class="card-img-top" alt="${data.id} - ${data.name}">
+                <div class="card" id="pokemon-card" data-bs-toggle="modal" data-bs-target="#pokemon${
+                  data.id
+                }">
+                  <img src="${
+                    data.sprites.other.home.front_default
+                  }" class="card-img-top" alt="${data.id} - ${data.name}">
                   <div class="card-body text-center">
                     <h5 class="card-title">${data.name}</h5>
                   </div>
@@ -60,7 +64,7 @@ function loadPokemon(use) {
                     <div class="container">
                       <div class="row">
                         <div class="col-sm-1 col-md-4">
-                          <img src="${data.sprites.front_default}" class="img-modal" alt="${data.id} - ${data.name}">
+                          <img src="${data.sprites.other.home.front_default}" class="img-modal" alt="${data.id} - ${data.name}">
                         </div>
                         <div class="col-sm-1 col-md-8">
                           <div id="types-${data.id}"></div>
@@ -174,7 +178,7 @@ function searchByName() {
                     <div class="container">
                       <div class="row">
                         <div class="col-sm-1 col-md-4">
-                          <img src="${data.sprites.front_default}" class="img-modal" alt="${data.id} - ${data.name}">
+                          <img src="${data.sprites.other.home.front_default}" class="img-modal" alt="${data.id} - ${data.name}">
                         </div>
                         <div class="col-sm-1 col-md-8">
                           <div id="searchTypes${data.id}"></div>
